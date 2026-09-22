@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-void main() {
+int main() {
     int x,y, total;
 
     printf("Enter The First Number: ");
