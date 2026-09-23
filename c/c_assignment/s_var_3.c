@@ -11,15 +11,9 @@ int main() {
     printf("Enter The Second Variable Value: ");
     scanf("%d", &b);
 
-    if (a > c) {
-        c = a;
-        if (b > 0) {
-            a = b;
-            if (a != c) {
-                b = c;
-            }
-        }
-    }
+    c = a;
+    a = b;
+    b = c;
 
     printf("The Variable A = %d\n", a);
     printf("The Variable B = %d\n", b);

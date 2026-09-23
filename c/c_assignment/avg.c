@@ -4,7 +4,7 @@
 
 int main() {
     int a, b, c;
-    int ans;
+    float ans;
     
     printf("Enter The First Number: ");
     scanf("%d", &a);
@@ -14,5 +14,5 @@ int main() {
     scanf("%d", &c);
 
     ans = (a + b + c) / 3;
-    printf("The Average Of %d, %d, %d is %d", a, b, c, ans);
+    printf("The Average Of %d, %d, %d is %f", a, b, c, ans);
 }

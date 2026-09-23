@@ -11,8 +11,8 @@ int main() {
     c = 2 * 3.14159 * r;
     a = 3.14159 * r * r;
 
-    printf("The Area Of The Circle With The Radius %.2f is: %.2f\n", r, a);
-    printf("The Circumference Of The Circle With The Radius %.2f is: %.2f\n", r, c);
+    printf("The Area Of The Circle With The Radius %.2f is: %f\n", r, a);
+    printf("The Circumference Of The Circle With The Radius %.2f is: %.f\n", r, c);
     return 0;
 }
 
