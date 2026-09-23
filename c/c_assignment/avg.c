@@ -3,16 +3,15 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c;
-    float ans;
+    float ans, a, b, c;
     
     printf("Enter The First Number: ");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("Enter The Second Number: ");
-    scanf("%d", &b);
+    scanf("%f", &b);
     printf("Enter The Third Number: ");
-    scanf("%d", &c);
+    scanf("%f", &c);
 
     ans = (a + b + c) / 3;
-    printf("The Average Of %d, %d, %d is %f", a, b, c, ans);
+    printf("The Average Of %.1f, %.1f, %.1f is %.2f", a, b, c, ans);
 }
