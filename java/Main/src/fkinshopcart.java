@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.HashMap;
 
 public class fkinshopcart {
-    public static void run() {
+    public static void main(String[] args) {
         HashMap<String, Integer> menu = new HashMap<>();
         menu.put("Pizza", 15);
         menu.put("Hamburger", 20);

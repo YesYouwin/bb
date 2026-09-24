@@ -1,11 +1,11 @@
 import java.util.Scanner;   
 
 public class Calculator {
-    public static void run() {
+    public static void main(String[] args) {
                 
         // declaration like response = 0 or remainder = 0 {remainder for diivsion}
         double res = 0;
-        double rem = 0.0;
+        double rem = 0;
 
         // This shit does the user input, U make a scanner with new scanner(System.in) import it's java.util.Scanner and then
         // You make prompts for user input
