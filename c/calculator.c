@@ -1,50 +1,65 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
 
 int main() {
-    int x, y, total;
+    float x, y, total;
     char action, confirmation;
+    bool hasresult = false;
+    confirmation = 'N';
 
     printf("Enter The Primary Number: ");
-    scanf("%d", &x);
-    printf("Enter The Action That Will Happen With %d : ", x);
-    scanf(" %c", &action);
-    if (!(action == '+' || action == '-' || action == '/' || action == '*')) {
-        printf("You Entered An Invalid Action.\n");
-        printf("Allowed Actions are { + , - , / , * }");
-        return 1;
-    }
-    printf("Enter The Secondary Number : ");
-    scanf("%d", &y);
-    printf("Great Do You Want To Do %d %c %d? (Y/N): ", x, action, y);
-    scanf(" %c", &confirmation);
-    if (!(confirmation == 'Y' || confirmation == 'N')) {
-        printf("Please Answer Either 'Y' or 'N'");
-        return 1;
-    }
+    scanf("%f", &x);
 
-    if (confirmation == 'Y') {
+    while (confirmation != 'Y') {
+        if (hasresult) {
+            x = total;
+        }
+        
+        printf("Enter The Action That Will Happen With %.2f : ", x);
+            scanf(" %c", &action);
+        if (!(action == '+' || action == '-' || action == '/' || action == '*' || action == 'x')) {
+            printf("You Entered An Invalid Action.\n");
+            printf("Allowed Actions are { + , - , / , * }");
+            continue;
+        }
+        printf("Enter The Secondary Number : ");
+        scanf("%f", &y);
+
         if (action == '+') {
             total = x + y;
-            printf("The Sum Of %d and %d is: %d", x, y, total);
+            printf("The Sum Of %.2f and %.2f is: %.2f\n", x, y, total);
+            hasresult = true;
         }
         if (action == '-') {
             total = x - y;
-            printf("The Substraction Of %d from %d is: %d", x, y, total);
+            printf("The Substraction Of %.2f from %.2f is: %.2f\n", x, y, total);
+            hasresult = true;
         }
-        if (action == '*') {
+        if (action == '*' || action == 'x') {
             total = x * y;
-            printf("The Product Of %d and %d is: %d", x, y, total);
+            printf("The Product Of %.2f and %.2f is: %.2f\n", x, y, total);
+            hasresult = true;
         }
         if (action == '/') {
-            int rem = x % y;
+            float rem = fmod(x, y);
             total = x / y; 
-            printf("The Result Of %d divided by %d will be\n", x, y);
-            printf("Quotient: %d\n", total);
-            printf("Remainder: %d\n", rem);
-        }  
+            printf("The Result Of %.2f divided by %.2f will be\n", x, y);
+            printf("Quotient: %.2f\n", total);
+            printf("Remainder: %.2f\n", rem);
+            hasresult = true;
+        }
+        hasresult = true;
+
+        printf("Great! Are You Finished Yet? (Y/N): ");
+        scanf(" %c", &confirmation);
+        if (!(confirmation == 'Y' || confirmation == 'N' )) {
+            printf("You Entered An Invalid Answer.\n");
+            printf("Please Choose Between (Y/N)");
+            continue;
+        }
+        
     }
-    else if(confirmation == 'N') {
-        printf("Well Go Fuck Yourself Then.");
-    }
+    printf("Great! Your Final Answer Is:  %.2f", total);
     return 0;
 }
