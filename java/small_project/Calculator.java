@@ -14,23 +14,23 @@ public class Calculator {
 
         Scanner scanner = new Scanner(System.in);
             System.out.print("\u001B[0mEnter a number: ");
-        String first_number = scanner .nextLine();
-        double f = Double.parseDouble(first_number);
+            String first_number = scanner.nextLine();
+            double f = Double.parseDouble(first_number);
 
         while (!response.equalsIgnoreCase("Yes")) {
             if (hasResult) {
                 f = res;
             }
             System.out.print("\u001B[0mEnter The Action That Will Occur With " + f + ": ");
-                String action = scanner .nextLine();
-                if (!(action.equals("+") || action.equals("-") || action.equals("/") || action.equals("x"))) {
+                String action = scanner.nextLine();
+                if (!(action.equals("+") || action.equals("-") || action.equals("/") || action.equals("x") || action.equals("*"))) {
                         System.out.println("\u001B[31mYou Entered An Invalid Action.");
-                        System.out.println("Allowed Actions are { + , - , / , x }");
+                        System.out.println("Allowed Actions are { + , - , / , x, * }");
                         continue;
                     }
                 
             System.out.print("Enter another number: ");
-                String second_number = scanner .nextLine();
+                String second_number = scanner.nextLine();
 
             // Basically a string to number specifically decimal -ish number converter with the use of "double". The parse is a new thing I just found out about
             double s = Double.parseDouble(second_number);
@@ -45,7 +45,7 @@ public class Calculator {
                 res = f - s;
                 System.out.println("Result: " + res);
             }
-            else if (action.equals("x")) {
+            else if (action.equalsIgnoreCase("x") || action.equals("*")) {
                 res = f * s;
                 System.out.println("Result: " + res);
             }

@@ -38,7 +38,7 @@ class Solution {
 }
 
 // Basically created 2 different hashmaps for string s and t. 
-// Then checked if the key was the same from previous time. 
-// If yes then add a +1 for the Value, otherwise just put the key with value 1 for starters.
+// Then checked if the key was the already added with a value. 
+// If yes then add a '+1' for the Value, otherwise just put the key with value 1 for starters (x, 1).
 // Finally compare both hashmaps with sv.equals(tv) and since the answer was in boolean I make the thing compare and return instantly. 
-// Still not sure how to compare and extract certain characters but yea
+// Still not sure how to compare and extract certain characters but yea, boolean is easy.

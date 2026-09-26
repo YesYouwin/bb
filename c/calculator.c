@@ -3,7 +3,7 @@
 #include <math.h>
 
 int main() {
-    float x, y, total;
+    float x, y, total; 
     char action, confirmation;
     bool hasresult = false;
     confirmation = 'N';
@@ -61,5 +61,4 @@ int main() {
         
     }
     printf("Great! Your Final Answer Is:  %.2f", total);
-    return 0;
 }
