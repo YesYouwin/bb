@@ -13,6 +13,14 @@ public class Calculator {
         // You make prompts for user input
 
         Scanner scanner = new Scanner(System.in);
+            System.out.println("\n");
+            System.out.println("\n");
+            System.out.println("0_______________________________0\n");
+            System.out.println("|SIMPLE CALCULATOR              |\n");
+            System.out.println("|                               |\n");
+            System.out.println("|           By: Jack_Sonic(Yash)|\n");
+            System.out.println("I_______________________________I\n");
+            System.out.println("\n");
             System.out.print("\u001B[0mEnter a number: ");
             String first_number = scanner.nextLine();
             double f = Double.parseDouble(first_number);

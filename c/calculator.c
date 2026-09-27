@@ -8,7 +8,15 @@ int main() {
     bool hasresult = false;
     confirmation = 'N';
 
-    printf("Enter The Primary Number: ");
+    printf("\n");
+    printf("\n");
+    printf("0_______________________________0\n");
+    printf("|SIMPLE CALCULATOR              |\n");
+    printf("|                               |\n");
+    printf("|           By: Jack_Sonic(Yash)|\n");
+    printf("I_______________________________I\n");
+    printf("\n");
+    printf("Enter The First Number: ");
     scanf("%f", &x);
 
     while (confirmation != 'Y') {
@@ -23,7 +31,7 @@ int main() {
             printf("Allowed Actions are { + , - , / , * }");
             continue;
         }
-        printf("Enter The Secondary Number : ");
+        printf("Enter The Second Number : ");
         scanf("%f", &y);
 
         if (action == '+') {
