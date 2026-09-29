@@ -21,7 +21,7 @@ public class quesbb {
             System.out.println("PCC: 0/2");
             System.out.println("OA: 0");
             System.out.println("OB: 0");
-            System.out.println("Aditya waala subject: 0");
+            System.out.println("ETC: 0/6");
             System.out.println("***************************");
             System.out.println("Exit");
             System.out.println("***************************");
@@ -62,7 +62,7 @@ public class quesbb {
         System.out.print("Ans:- ");
         String ans = input.nextLine();
 
-        if (!ans.equals(answers[i])) {
+        if (!ans.equalsIgnoreCase(answers[i])) {
             System.out.println("L idiot wrong answer");
         }
         else {
@@ -71,22 +71,95 @@ public class quesbb {
     }
 
     static void MATH(int xp) {
-        Random rng = new Random();
+    /*  Random rng = new Random();
+        String[] questions = { };
+        String[] answers = { };
+
+        int i = rng.nextInt(questions.length);
+
+        System.out.println("* " + questions[i]);
+        System.out.print("Ans:- ");
+        String ans = input.nextLine();
+
+        if (!ans.equalsIgnoreCase(answers[i])) {
+            System.out.println("L idiot wrong answer");
+        }
+        else {
+            System.out.println("Karliya cheating?");
+        } */
         System.out.println("WORK IN PROGRESS :(");
     }
 
     static void OB(int xp) {
-        Random rng = new Random();
+        /*  Random rng = new Random();
+            String[] questions = { };
+            String[] answers = { };
+    
+            int i = rng.nextInt(questions.length);
+    
+            System.out.println("* " + questions[i]);
+            System.out.print("Ans:- ");
+            String ans = input.nextLine();
+    
+            if (!ans.equalsIgnoreCase(answers[i])) {
+                System.out.println("L idiot wrong answer");
+            }
+            else {
+                System.out.println("Karliya cheating?");
+            } */
         System.out.println("WORK IN PROGRESS :(");
     }
 
     static void OA(int xp) {
-        Random rng = new Random();
+        /*  Random rng = new Random();
+            String[] questions = { };
+            String[] answers = { };
+    
+            int i = rng.nextInt(questions.length);
+    
+            System.out.println("* " + questions[i]);
+            System.out.print("Ans:- ");
+            String ans = input.nextLine();
+    
+            if (!ans.equalsIgnoreCase(answers[i])) {
+                System.out.println("L idiot wrong answer");
+            }
+            else {
+                System.out.println("Karliya cheating?");
+            } */
         System.out.println("WORK IN PROGRESS :(");
     }
 
     static void ETC(int xp) {
-        Random rng = new Random();
-        System.out.println("WORK IN PROGRESS :(");
-    }
+        Random rng = new Random(); 
+            String[] questions = {
+                "What is a Computer?",
+                "What is Data?", 
+                "What is Information?", 
+                "What is Processing?", 
+                "What is a Computer Program?",
+                "What is an Algorithm?"
+            };
+            String[] answers = {
+                "A computer is an electronic device that accepts data as input, processes it according to instructions, stores it, and produces meaningful information as output.", 
+                "Data is a set of symbols, collection of raw facts and figures that can be processed by a computer to produce useful information.",
+                "Information is processed and organized data that is meaningful and useful to the user.",
+                "Processing in computer science is the step by step process to convert given input into desired output. It requires a computer program, computer memory, arthmetical & logical unit (ALU) and CPU to produce correct, meaningful & desired information as output", 
+                "Computer program is a set of (step by step) instructions that are used to process data as input to produce the desired information as output. The computer program must follow rules and grammar of computer language. A computer program requires translators and a computer algorithm, so that a user can interact with machine.",
+                "Algorithm is a step by step process to solve a problem that is logically optimal and relevant and algorithm has to follow 4 properties: 1. Determination: "
+            };
+    
+            int i = rng.nextInt(questions.length);
+    
+            System.out.println("* " + questions[i]);
+            System.out.print("Ans:- ");
+            String ans = input.nextLine();
+    
+            if (!ans.equalsIgnoreCase(answers[i])) {
+                System.out.println("\n \u001B[31mL idiot wrong answer \u001B[0m\n");
+            }
+            else {
+                System.out.println("\n \u001B[32mKarliya cheating? \u001B[0m\n");
+            } 
+        }
 }
