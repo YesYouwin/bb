@@ -13,13 +13,18 @@ git push
     java -cp bin jaikaal
 
 - package calculator;  #For importing files
- 
+
+
+// && = AND or both = AND GATE redstone
+// || = OR or Either = OR GATE redstone
+// ! = opposite = literally a redstone torch when powered by something else 
+//  : = Ternary operator, very important to learn about
  
 What you want	   Java
 int	                %d
 double / float	    %f
-2 decimal places	    %.2f
-char	                %c
+2 decimal places    %.2f
+char	            %c
 String	            %s
 boolean	            %b
 newline	            %n

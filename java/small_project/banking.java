@@ -9,7 +9,6 @@ public class banking{
         String error = "\u001B[31mError: \u001B[0m";
         double firmval = 0;
         
-        
         Scanner input = new Scanner(System.in);
        
         while (!(res.equalsIgnoreCase("exit") || res.equals("4"))) {
@@ -29,13 +28,13 @@ public class banking{
             System.out.println(error + "Please Enter Between (1, 2, 3, 4) Options.");
             continue;
             }
-
+            
             if (res.equals("1")) {
                 System.out.println("Great! How Much Do You Want To Deposit? ");
                 System.out.print(": ");
                 deposit = input.nextLine();
                 double d = Double.parseDouble(deposit);
-
+                
                 System.out.print("Excellent! What Account Does It Belong To? ");
                 System.out.print(": ");
                 account = input.nextLine();
@@ -70,8 +69,9 @@ public class banking{
                     System.out.println("Please Deposit Some Money To Get Started.\n");
                 }
             }
+
+            
         }
     input.close();
-    
     }
 }
