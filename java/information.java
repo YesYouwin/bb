@@ -40,4 +40,16 @@ public static final String ANSI_CYAN = "\u001B[36m";
 public static final String ANSI_WHITE = "\u001B[37m";
 
 
+What's REST?
+
+It's a style of designing web APIs around HTTP.
+The main HTTP methods you'll encounter are:
+
+HTTP method	           Meaning
+  GET	             Give me data
+ POST	             Create data
+ PATCH	             Modify data
+DELETE	             Delete data
+
+
 */
