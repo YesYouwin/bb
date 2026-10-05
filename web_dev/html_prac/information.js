@@ -10,4 +10,7 @@ To run the web application cd into the folder of the project and then do: npx se
 target="_blank"  This Opens The Link In A New Tab Or Window 
 title = "ManChild Page" Is basically a tooltip when hovering over the item
 
+<a href="/manchild" <!--Example of a relative URL -->
+<a href="http://localhost:3000/manchild" <!--Example of a normal URL -->
+
 */
