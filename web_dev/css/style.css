@@ -1,0 +1,19 @@
+html, body {
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    background:linear-gradient(to top, #270000,#000a37);
+}
+
+#div1 {
+    align-self: center;
+    width: 1000px;
+    height:400px;
+    padding: 20px;
+    border-radius: 30px;
+    background:linear-gradient(to right,#000627,#03000c);
+    color:white;
+}
+
+
