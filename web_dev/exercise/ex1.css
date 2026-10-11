@@ -1,0 +1,19 @@
+body {
+    background-image: url('../cleanup/yoru_bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color:white;
+}
+
+#h11 {
+    text-align:center;
+}
+
+#h31 {
+    text-align:center;
+}
+
+#art {
+    align-content:center;
+}
