@@ -1,0 +1,4 @@
+name: RandomPlugin
+version: 1.0
+main: dev.jack.Flight
+api-version: '26.2'
