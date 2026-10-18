@@ -1,0 +1,4 @@
+com\buresu\Bot.class
+com\buresu\commands\upldstat.class
+com\buresu\commands\palcmd.class
+com\buresu\codes\palindrome.class
