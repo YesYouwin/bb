@@ -19,6 +19,7 @@ public class method {
         System.out.print("Enter The Third Number:");
             c = user_input.nextInt();
 
+        user_input.close();
         // This is how you input a method specifically [multiaddition(a, b, c);]
         System.out.println(multi_addition(a, b, c));
     }

@@ -18,5 +18,7 @@ title = "ManChild Page" Is basically a tooltip when hovering over the item
   Your browser does not support the video tag.
 </video>   
 
+cd web_dev/html
+npx serve .
 
 */

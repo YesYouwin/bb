@@ -8,11 +8,13 @@ import java.net.URI; // Uniform resource identifier URI.create("https://abcdefgh
 import java.net.http.HttpClient; // HttpClient lets Java do: Java -> HTTP request -> Supabase -> HTTP response || Talker over http 
 import java.net.http.HttpRequest; // A specific destination for information to be taken from || What do you specifically need?
 import java.net.http.HttpResponse; // This is the receiver to the httpclient's request.
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class quesbb {
 
-    static final String SUPABASE_URL = "https://usvxygcjcolidagjhqzo.supabase.co"; // Contains the project link 
-    static final String SUPABASE_KEY = "sb_publishable_y7ZG19ngnvtfpLBNaLuMCw_RnTYL9jb"; // This is the public key for the project itself
+    Dotenv dotenv = Dotenv.load();
+    static final String SUPABASE_URL = dotenv.get("SUPABASE_URL"); // Contains the project link 
+    static final String SUPABASE_KEY = dotenv.get("SUPABASE_KEY"); // This is the public key for the project itself
     static final HttpClient HTTP = HttpClient.newHttpClient(); // A decoy http request
     static Scanner input = new Scanner(System.in);
 
