@@ -8,11 +8,11 @@ CREATE TABLE public.questions (
 );
 
 CREATE TABLE public.dbname (
-    uniqueid (id) typeoftable (INTEGER) containertype (GENERATED ALWAYS AS IDENTITY PRIMARY KEY),
+    nameoftable (id) typeoftable (INTEGER) containertype (GENERATED ALWAYS AS IDENTITY PRIMARY KEY),
     nameoftable (question) typeoftable(TEXT) containertype (NULL/NOT NULL),
     nameoftable (answer) typeoftable(TEXT) containertype (NULL/NOT NULL),
     nameoftable (subject) typeoftable(TEXT) containertype (NULL/NOT NULL),
-    nameoftable (xp) typeoftable(INTEGER) containertype (NULL/NOT NULL) if.default (DEFAULT 10),
+    nameoftable (xp) typeoftable(INTEGER) containertype (NULL/NOT NULL) default.value (DEFAULT 10),
 );
 
 ------------------------ For Relational Row  -------------------------
@@ -50,5 +50,9 @@ try (PreparedStatement add = db.prepareStatement(insertSubject, Statement.RETURN
     add.executeUpdate();
 
 ----------------------------------------------------------------------------------------------------------------------------
+
+javac -cp ".;postgresql-42.7.14.jar" sql_test1.java
+java -cp ".;..\postgresql-42.7.14.jar" sql_test1
+
 
 */

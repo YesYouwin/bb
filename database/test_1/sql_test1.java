@@ -1,3 +1,5 @@
+// This Excersice Deals With Insertion And Deletion Of A Singular Row In A Singular Table In PostgreSQL
+
 import java.sql.*;
 import java.util.Scanner;
 
@@ -50,8 +52,8 @@ public class sql_test1 {
     static void deletion(String subject) {
         String deleteSql = "DELETE FROM public.subjects WHERE subject_name = ?";
 
-        try (Connection conn = DriverManager.getConnection(url, user, password);
-            PreparedStatement delsql = conn.prepareStatement(deleteSql)) {
+        try (Connection db = DriverManager.getConnection(url, user, password);
+            PreparedStatement delsql = db.prepareStatement(deleteSql)) {
                 delsql.setString(1, subject);
                 int rowsDeleted = delsql.executeUpdate();
 
