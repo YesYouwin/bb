@@ -59,7 +59,7 @@ int main() {
         }
         hasresult = true;
 
-        printf("Great! Are You Finished Yet? (Y/N): ");
+        printf("You Finished Yet? (Y/N): ");
         scanf(" %c", &confirmation);
         if (!(confirmation == 'Y' || confirmation == 'N' )) {
             printf("You Entered An Invalid Answer.\n");
