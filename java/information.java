@@ -1,4 +1,5 @@
-git --version/*
+/*
+git --version
 git status
 git add .
 git commit -m "describe what you changed"

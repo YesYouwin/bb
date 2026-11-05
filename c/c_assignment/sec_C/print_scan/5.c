@@ -3,17 +3,17 @@
 #include <stdio.h>
 
 int main() {
-    char str[50]; // To declare a string you have to give it a proper 
+    char name[50]; // To declare a string you have to give it a proper 
     int rn, mark;
 
     printf("Enter Your Name: ");
-    scanf("%s", str);
+    scanf("%s", name);
     printf("Enter Your Roll Number: ");
     scanf("%d", &rn);
     printf("Enter Your Marks: ");
     scanf("%d", &mark);
 
-    printf("Name = %s\n", str);
+    printf("Name = %s\n", name);
     printf("Roll Number = %d \n", rn);
     printf("Marks = %d", mark);
 }

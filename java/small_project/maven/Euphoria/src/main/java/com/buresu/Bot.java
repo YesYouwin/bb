@@ -39,9 +39,6 @@ public class Bot {
             success -> System.out.println("Registered /upldstat in " + guild.getName()),
             error -> System.err.println("Registration Failed For /upldstat: " + error.getMessage()));
 
-        guild.upsertCommand(embed.getCommand()).queue(
-            success -> System.out.println("Registered /embed in " + guid.getName()),
-            error -> System.err.println("Registration Failed For /embed: "+ error.getMessage());
-        )
+
     }
 }

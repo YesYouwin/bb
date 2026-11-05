@@ -3,15 +3,10 @@
 #include <stdio.h>
 
 int main() {
-    int a; 
+    int a;
 
     printf("Enter The Number For Comparison: ");
     scanf("%d", &a);
 
-    if (a > 100) {
-        printf("Number is Greater Than 100");
-    }
-    else {
-        printf("Number is Not Greater Than 100");
-    }
+    printf("%s", a > 100 ? "Number is Greater Than 100":"Number is Not Greater Than 100");
 }

@@ -6,6 +6,6 @@ public class HelloPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Hello, Minecraft!");
+        getLogger().info("Initiating MVN Playground Plugin");
     }
 }

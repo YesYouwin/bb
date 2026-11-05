@@ -8,7 +8,7 @@ int main() {
     printf("Enter The Number: ");
     scanf("%d", &a);
 
-    if ((a % 2) == 0) {
+    if (a % 2 == 0) {
         printf("The Number Is Even.");
     }
     else {

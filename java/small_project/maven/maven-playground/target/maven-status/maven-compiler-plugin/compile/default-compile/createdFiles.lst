@@ -1,3 +1,5 @@
-dev\jack\Flight.class
-dev\jack\App.class
-dev\jack\HelloPlugin.class
+dev/jack/HelloPlugin.class
+dev/jack/Flight.class
+dev/jack/phytnt$BlockSnapshot.class
+dev/jack/phytnt$1.class
+dev/jack/phytnt.class

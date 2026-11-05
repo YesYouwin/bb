@@ -10,10 +10,5 @@ int main() {
     printf("Enter The Second Number: ");
     scanf("%d", &b);
 
-    if (a > b) {
-        printf("A is Greater Than B");
-    }
-    else {
-        printf("A is Not Greater Than B");
-    }
+    printf("%s", a > b ? "A is Greater Than B":"B is Greater Than A");
 }

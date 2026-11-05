@@ -13,6 +13,7 @@ int main() {
     }
     else {
         printf("Invalid input\n");
+        printf("Example of Input: 10, 20, 30");
         return 0;
     }
     

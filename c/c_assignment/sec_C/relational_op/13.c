@@ -10,11 +10,5 @@ int main() {
     printf("Enter The Second Number: ");
     scanf("%d", &b);
 
-    if (a == b) {
-        printf("A is Equal To B.");
-    }
-    else {
-        printf("A is Not Equal To B.");
-    }
-    
+    printf("%s", a == b ? "A is Equal To B":"A is Not Equal To B.");
 }
