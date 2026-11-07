@@ -1,7 +1,6 @@
 package com.buresu;
 
 import com.buresu.commands.palcmd;
-import com.buresu.commands.embed;
 import com.buresu.commands.upldstat;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
@@ -19,7 +18,7 @@ public class Bot {
 
         JDA jda = JDABuilder.createDefault(token)
             .setActivity(Activity.playing("with Balls"))
-            .addEventListeners(new palcmd(), new upldstat(), new embed())
+            .addEventListeners(new palcmd(), new upldstat())
             .build(); 
         jda.awaitReady();
 

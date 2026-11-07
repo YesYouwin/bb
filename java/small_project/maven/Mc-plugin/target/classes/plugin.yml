@@ -1,0 +1,4 @@
+name: InvitePluginTest
+version: "1.0"
+main: com.test.Invite
+api-version: '26.3'

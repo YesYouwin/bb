@@ -100,7 +100,7 @@ public final class phytnt extends JavaPlugin implements Listener {
         // Adds Their Physics Version
         for (BlockSnapshot snapshot : blocks) {
             Location spawnLocation = snapshot.location().clone().add(0.5, 0.5, 0.5);
-            FallingBlock fallingBlock = player.getWorld().spawnFallingBlock(spawnLocation,snapshot.data());
+            FallingBlock fallingBlock = player.getWorld().spawn(spawnLocation, FallingBlock.class, entity -> {entity.setBlockData(snapshot.data());});
             fallingBlock.setDropItem(false);
 
             Vector direction = spawnLocation.toVector().subtract(boom.toVector()).normalize();
@@ -110,9 +110,6 @@ public final class phytnt extends JavaPlugin implements Listener {
             
             fallingBlock.setVelocity(direction);
         }
-        
-        
     }
-
     private record BlockSnapshot(Location location, BlockData data) {}
 }

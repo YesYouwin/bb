@@ -74,5 +74,6 @@ public class Flight extends JavaPlugin implements Listener {
             player.sendMessage("You've been saved from the fall!");
             fallProtected.remove(player.getUniqueId());
         }
+
     }
 }
